@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/k.css" %}">
+
+  </head>
+  <body>
+
+    <div class="continer" align='center'>
+      <div class="jumbotron"  alig='center'>
+        <form method="POST">
+        <h1>Add Student Details</h1>
+          {%csrf_token%}
+          <input type="text" name="name" placeholder="enter your name" required><br>
+          <input type="text" name="roll" placeholder="enter your roll" required><br>
+          <input type="text" name="year" placeholder="enter your year" required><br>
+          <input type="text" name="branch" placeholder="enter your branch" required><br>
+          <input type="text" name="email" placeholder="enter your email" required><br>
+          <input type="text" name="password" placeholder="enter your password" required><br>
+          <input type="submit" class="btn btn-primary btn-lg" value="submit">
+        </form>
+
+      </div>
+        </div>
+  </body>
+</html>

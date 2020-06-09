@@ -1,0 +1,39 @@
+body{
+  background-image: url('f2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:auto;
+}
+h1{
+  text-align: center;
+  color:white;
+  margin-top: auto;
+
+}
+.jumbotron{
+  color: white;
+  background-image: url('f2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form{
+  color:white;
+}
+
+table{
+
+
+  align:center;
+  text-align:center;
+  color:white;
+
+
+}
+th,td{
+  padding: 7px;
+}
+thead,th{
+  color: white;
+  border: white solid:2px;
+
+}

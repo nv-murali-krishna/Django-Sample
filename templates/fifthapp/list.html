@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static "css/k.css" %}">
+  </head>
+  <body>
+
+    {%if student_list%}
+    <table align='center'>
+      <h1>Add student Details</h1>
+      <thead>
+        <th>NAME</th>
+        <th>Roll</th>
+        <th>Branch</th>
+        <th>Year</th>
+        <th>Email</th>
+        <th>Password</th>
+      </thead>
+      {% for student in student_list%}
+      <tr>
+        <td>{{student.name}}</td>
+        <td>{{student.roll}}</td>
+        <td>{{student.branch}}</td>
+        <td>{{student.year}}</td>
+        <td>{{student.email}}</td>
+        <td>{{student.password}}</td>
+      </tr>
+      {%endfor%}
+      </table>
+      {%else%}
+      <p>no students found</p>
+      {%endif%}
+  </body>
+</html>

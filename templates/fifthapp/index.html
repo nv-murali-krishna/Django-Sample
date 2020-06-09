@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/k.css" %}">
+  </head>
+  <body>
+    <div class="continer" align='center'>
+    <div class="jumbotron" align='center'>
+    <h1 class="display-4">Student Register</h1>
+    <p class="lead">Enter your Details</p>
+    <hr class="my-4">
+    <a class="btn btn-primary btn-md" href="/addstudent" role="button">Addstudent</a>&nbsp&nbsp
+    <a class="btn btn-primary btn-md" href="/list" role="button">list of students</a>&nbsp&nbsp
+    <a class="btn btn-primary btn-md" href="/media" role="button">media</a>
+
+    </div>
+    </div>
+  </body>
+</html>
